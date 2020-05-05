@@ -15,45 +15,52 @@
   <div class="container4-fluid">
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
-        <h1>Home Value Dashboard</h1>
+        
         <!-- <iframe width="420" height="315"
         src="https://www.youtube.com/embed/tgbNymZ7vqY">
         </iframe> -->
         
-        <img id="" class="figure-img img-fluid rounded" src='https://luxport.s3.amazonaws.com/4589/A098BD64-3A78-4084-A83D-D574B69F3AA4%2BD574B69F3AA4_001_H.jpg';
-             max-width:64px; max-height:64px/>
-
-        <h5>Use the interactive charts below to explore the dataset<h5>
+        <img id="" class="figure-img img-fluid rounded" src='https://luxport.s3.amazonaws.com/4589/A098BD64-3A78-4084-A83D-D574B69F3AA4%2BD574B69F3AA4_001_H.jpg' height="400" width="600"/>
+        <h1>Home value in Nashville metropolitan area</h1>
+        <!-- <div class="row"> -->
+          <div class="col-md-12  text-center">
+            <div class="well text-center">
+              <h3>Choose a county:</h3>
+              <select id="selCounty" onchange="optionChanged(this.value)">
+                <option value="Davidson">Davidson</option>
+                <option value="Williamson">Williamson</option>
+                <option value="Rutherford">Rutherford</option>
+                <option value="Sumner">Sumner</option>
+    
+                <option value="Wilson">Wilson</option>
+                <option value="Maury">Maury</option>
+                <option value="Robertson">Robertson</option>
+                <option value="Dickson">Dickson</option>
+    
+                <option value="Cheatham">Cheatham</option>
+                <option value="Hickman">Hickman</option>
+                <option value="Macon">Macon</option>
+                <option value="Smith">Smith</option>
+    
+                <option value="Cannon">Cannon</option>
+                <option value="Trousdale">Trousdale</option>
+              </select>
+            </div>
+          </div>
+        <!-- </div> -->
         
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12  text-center">
-        <div class="well text-center">
-          <h3>Choose a County:</h3>
-          <select id="selCounty" onchange="optionChanged(this.value)">
-            <option value="Davidson">Davidson</option>
-            <option value="Williamson">Williamson</option>
-            <option value="Rutherford">Rutherford</option>
-            <option value="Sumner">Sumner</option>
-
-            <option value="Wilson">Wilson</option>
-            <option value="Maury">Maury</option>
-            <option value="Robertson">Robertson</option>
-            <option value="Dickson">Dickson</option>
-
-            <option value="Cheatham">Cheatham</option>
-            <option value="Hickman">Hickman</option>
-            <option value="Macon">Macon</option>
-            <option value="Smith">Smith</option>
-
-            <option value="Cannon">Cannon</option>
-            <option value="Trousdale">Trousdale</option>
-          </select>
-        </div>
+    
+    <!-- <div class="row">
+      <div class="col-md-6">
+        <div id="level"></div>
+      </div>
+      <div class="col-md-6">
+        <div id="growth"></div>
       </div>
     </div>
-
+    <br> -->
     <div class="row"></div>
       <div class="col-md-12" align="center">
         <div id="both" align="center"></div>
